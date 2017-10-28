@@ -8,5 +8,13 @@ namespace DashBoardCSharp.Common
 {
     class Utilities
     {
+        public static void SplitText(string list)
+        {
+            IList<String> temp = list.Split('|');
+            foreach (string element in temp)
+            {
+                System.Console.WriteLine(element);
+            }
+        }
     }
 }

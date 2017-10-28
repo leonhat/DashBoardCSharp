@@ -41,6 +41,10 @@
       <HintPath>..\packages\Selenium.WebDriver.3.6.0\lib\net45\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebDriver.Support, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.6.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -57,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Common\Constant.cs" />
     <Compile Include="Common\Utilities.cs" />
+    <Compile Include="TestCases\Test.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,7 +71,6 @@
   <ItemGroup>
     <Folder Include="DataObjects\" />
     <Folder Include="PageObjects\" />
-    <Folder Include="TestCases\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Executables\chromedriver.exe" />
